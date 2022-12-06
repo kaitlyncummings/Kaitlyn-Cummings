@@ -7,45 +7,75 @@ html{
     background-repeat: repeat;
 }
 
-h1, h2, nav{ 
-    text-align: center;
-}
-.row{
+nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    background-image: url(./media/fullPlantPlat.svg);
+    background-repeat: repeat-x;
+    height: 2.4em;
+    padding-top: 2.15em;
+    margin-top: -1.5em;
+    font-size: 1.5em;
 }
 
-.item{
-    background-image: url(/media/potion.svg);
-    height: 10em;
-    width: 10em;
+h1, h2, nav, .item{ 
+    text-align: center;
+    font-family:Verdana, sans-serif;
+    line-height:1em;
+    color:#d1f0db;
+    font-weight:bold;
+    text-shadow:0px 0px 0 rgb(159,190,169),1px 1px 0 rgb(119,150,129),2px 2px 0 rgb(79,110,89),3px 3px 0 rgb(39,70,49),4px 4px 0 rgb(-1,30,9),5px 5px 0 rgb(-41,-10,-31), 6px 6px 0 rgb(-81,-50,-71),7px 7px 6px rgba(0,0,0,0.85),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
 }
-/* Background a and b styles*/
-img{
-    height: 20em;
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 1em;
+}
+h4{
+    padding-top: 2.2em;
+    padding-left: 6em;
+    padding-right: 6em;
 }
 
 footer{
     margin: 1em;
 }
-.imageGrid{
-    margin-left: 10%;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 40% 40%;
-}
-.platformGrid{
-    margin-left: 10%;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 40% 40%;
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+/* Potion Bottles*/
+.item{
+    background-image: url(./media/potion.svg);
+    background-repeat: no-repeat;
+    color: ;
+    align-items: center;
+    display: flex;
+    font-size: 1.3em;
+    height: 20em;
+    justify-content: center;
+    margin: -1em;
+    width: 20em;
+}
+
+
+/* Link Colors*/
 a:link{
     text-decoration: none;
 }
 a:visited{
     text-decoration: currentColor;
+}
+
+@media (min-width: 600px){
+
+    
 }
