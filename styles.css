@@ -22,7 +22,6 @@ nav{
 h1, h2, nav, .item{ 
     text-align: center;
     font-family:Verdana, sans-serif;
-    line-height:1em;
     color:#d1f0db;
     font-weight:bold;
     text-shadow:0px 0px 0 rgb(159,190,169),1px 1px 0 rgb(119,150,129),2px 2px 0 rgb(79,110,89),3px 3px 0 rgb(39,70,49),4px 4px 0 rgb(-1,30,9),5px 5px 0 rgb(-41,-10,-31), 6px 6px 0 rgb(-81,-50,-71),7px 7px 6px rgba(0,0,0,0.85),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
@@ -64,7 +63,7 @@ footer{
     font-size: 1.3em;
     height: 20em;
     justify-content: center;
-    margin: -1em;
+    margin: -.8em;
     width: 20em;
 }
 
@@ -78,7 +77,27 @@ a:visited{
 }
 
 
-@media (min-width: 600px){
+@media (min-width: 480px){
 
-    
+    nav{
+        height: 2.5em;
+        padding-top: 2em;
+        margin-top: -1.3em;
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 4em;
+    }
+    h4{
+        font-size: 1.15em;
+        padding-top: 1.8em;
+        padding-left: 6.2em;
+        padding-right: 5.8em;
+        color: black;
+        text-shadow:0px 0px 0 rgb(159,190,169),1px 1px 0 rgb(119,150,129),2px 2px 0 rgb(79,110,89),3px 3px 0 rgb(76, 95, 82),4px 4px 0 rgb(155, 186, 162),5px 5px 0 rgb(177, 208, 190), 6px 6px 0 rgb(195, 220, 206),7px 7px 6px rgb(215, 235, 224),7px 7px 1px rgb(227, 234, 230),0px 0px 6px white;
+    }
+    .item{
+        margin: -1em;
+        font-size: 1.1em;
+    }
 }
