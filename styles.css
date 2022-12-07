@@ -76,7 +76,11 @@ a:visited{
     text-decoration: currentColor;
 }
 
-
+@media (min-width: 0){
+    h4{
+        color: blue;
+    }
+}
 @media (min-width: 481px){
 
     nav{
