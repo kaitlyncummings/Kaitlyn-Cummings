@@ -27,9 +27,7 @@ h1, h2, h3, h5, nav, .item{
     font-weight:bold;
     text-shadow:0px 0px 0 rgb(159,190,169),1px 1px 0 rgb(119,150,129),2px 2px 0 rgb(79,110,89),3px 3px 0 rgb(39,70,49),4px 4px 0 rgb(-1,30,9),5px 5px 0 rgb(-41,-10,-31), 6px 6px 0 rgb(-81,-50,-71),7px 7px 6px rgba(0,0,0,0.85),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
 }
-h1{
-    font-size: 6em;
-}
+
 h2{
     font-size: 3em;
 }
@@ -64,12 +62,19 @@ footer{
     height: 4.5em;
 }
 
+/* Download Button*/
+
 button{
     background-color:rgb(240, 187, 234);
     color: black;
-    display: flex;
-    align-content: center;
+    font-family:Verdana, sans-serif;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 1.5em;
+
 }
+
 
 .row{
     display: flex;
@@ -90,7 +95,7 @@ button{
     margin: -.8em;
     width: 20em;
 }
-/* Hazmat Projects*/
+/* Projects & Education */
 .project{
     background-image: url(./media/bigPlatform.svg);
     background-repeat: no-repeat;
@@ -103,13 +108,13 @@ button{
     margin-bottom: -2em;
     width: 20em;
 }
+
 /* Resume & Contact Form Back*/
 .back{
-    background-image: url(./media/glass-brick-wall-purple.jpg);
-    background-image: repeat ;
+    background-image: url(./media/purple_bricks.jpg);
+    background-image: repeat;
     width: 100%;
     height: 100%;
-
 }
 
 /* Resume Styles*/
@@ -127,12 +132,24 @@ a:visited{
     text-decoration: currentColor;
 }
 
-@media (min-width: 0){
-    h4{
-        color: blue;
+@media (max-width: 480px){
+
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    .back{
+        margin: 1%;
+        width: 99%;
+    }
+    .resume{
+        width: 98%;
+        margin: 1%;
     }
 }
-@media (min-width: 481px){
+@media (min-width: 480px){
 
     nav{
         height: 2.5em;
@@ -155,13 +172,19 @@ a:visited{
         margin: -1em;
         font-size: 1.1em;
     }
+    .back{
+        margin: 1%;
+        width: 99%;
+    }
+    .resume{
+        width: 98%;
+        margin: 1%;
+    }
 }
 @media (min-width: 769px){
     
     /* Resume & Contact Form*/
     .back{
-        background-image: url(./glass-brick-wall-purple.jpg);
-        background-image: repeat ;
         margin-left: 5%;
         margin-right: 5%;
         width: 90%;
@@ -169,7 +192,6 @@ a:visited{
 
     }
     .resume{
-        background-color: rgba(240, 187, 234, 0.9);
         width: 90%;
         margin: 5%;
     }
@@ -177,15 +199,12 @@ a:visited{
 @media (min-width: 1025px){
         /* Resume & Contact Form*/
         .back{
-            background-image: url(./glass-brick-wall-purple.jpg);
-            background-image: repeat ;
             margin: 7.5%;
             width: 85%;
             height: 100%;
-    
+
         }
         .resume{
-            background-color: rgba(240, 187, 234, 0.9);
             width: 85%;
             margin: 7.5%;
         }
