@@ -17,9 +17,10 @@ nav{
     margin-top: -1em;
     margin-bottom: 2em;
     font-size: 3em;
+    width: 100%;
 }
 
-h1, h2, nav, .item{ 
+h1, h2, h3, h5, nav, .item{ 
     text-align: center;
     font-family:Verdana, sans-serif;
     color:#d1f0db;
@@ -33,7 +34,8 @@ h2{
     font-size: 3em;
 }
 h3{
-    font-size: 1em;
+    font-size: 2em;
+    padding-top: 1em;
 }
 h4{
     font-size: 1.5em;
@@ -41,9 +43,32 @@ h4{
     padding-left: 6em;
     padding-right: 6em;
 }
+h5{
+    font-size: 1.5em;
+}
+p{
+    padding-left: 2.5%;
+}
 
 footer{
-    margin: 1em;
+    background-image: url(./media/fullPlantPlat.svg);
+    background-repeat: repeat-x;
+    font-size: 1.7em;
+    text-align: center;
+    color: white;
+    text-shadow:0px 0px 0 rgb(159,190,169),1px 1px 0 rgb(119,150,129),2px 2px 0 rgb(79,110,89),3px 3px 0 rgb(39,70,49),4px 4px 0 rgb(-1,30,9),5px 5px 0 rgb(-41,-10,-31), 6px 6px 0 rgb(-81,-50,-71),7px 7px 6px rgba(0,0,0,0.85),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+    margin-top: 1em;
+    padding-bottom: -10em;
+    padding-top: 5em;
+    width: 100%;
+    height: 4.5em;
+}
+
+button{
+    background-color:rgb(240, 187, 234);
+    color: black;
+    display: flex;
+    align-content: center;
 }
 
 .row{
@@ -53,11 +78,10 @@ footer{
     justify-content: space-evenly;
 }
 
-/* Potion Bottles*/
+/* Potion Bottles */
 .item{
     background-image: url(./media/potion.svg);
     background-repeat: no-repeat;
-    color: ;
     align-items: center;
     display: flex;
     font-size: 1.3em;
@@ -66,7 +90,34 @@ footer{
     margin: -.8em;
     width: 20em;
 }
+/* Hazmat Projects*/
+.project{
+    background-image: url(./media/bigPlatform.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    font-size: 1.3em;
+    height: 20em;
+    justify-content: center;
+    margin-top: -2em;
+    margin-bottom: -2em;
+    width: 20em;
+}
+/* Resume & Contact Form Back*/
+.back{
+    background-image: url(./glass-brick-wall-purple.jpg);
+    background-image: repeat ;
+    width: 100%;
+    height: 100%;
 
+}
+
+/* Resume Styles*/
+.resume{
+    background-color: rgba(240, 187, 234, 0.9);
+    width: 98%;
+    margin: 1%;
+}
 
 /* Link Colors*/
 a:link{
@@ -104,4 +155,38 @@ a:visited{
         margin: -1em;
         font-size: 1.1em;
     }
+}
+@media (min-width: 769px){
+    
+    /* Resume & Contact Form*/
+    .back{
+        background-image: url(./glass-brick-wall-purple.jpg);
+        background-image: repeat ;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 100%;
+
+    }
+    .resume{
+        background-color: rgba(240, 187, 234, 0.9);
+        width: 90%;
+        margin: 5%;
+    }
+}
+@media (min-width: 1025px){
+        /* Resume & Contact Form*/
+        .back{
+            background-image: url(./glass-brick-wall-purple.jpg);
+            background-image: repeat ;
+            margin: 7.5%;
+            width: 85%;
+            height: 100%;
+    
+        }
+        .resume{
+            background-color: rgba(240, 187, 234, 0.9);
+            width: 85%;
+            margin: 7.5%;
+        }
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+        <title>Kaitlyn Cummings</title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">Kaitlyn Cummings</a></h1>
+        </header>
+
+        <nav>
+            
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html"> Contact Me</a>
+            
+        </nav>
+
+        <article class="back">
+            <h3>Contact Me</h3>
+            <p>Required items are marked with an asterisk *</p>
+            <form class="resume" method="post" action="mailto:kcummings@lcmail.lcsc.edu">
+                <label for="pname">Name: </label><input type="text" name="pname" id="pname" value="*"  autofocus required><br>
+                <label for="cname">Company Name: </label><input type="text" name="cname" id="cname"><br>
+                <label for="email">Email: </label><input type="email" name="email" id="email" required><br>
+                <label for="phone">Phone: </label><input type="tel" name="phone" id="phone" maxlength="14"><br>
+                <label for="question">Questions or Comments: </label><br>
+                <textarea name="questions" id="questions" cols="50" rows="20"></textarea><br>
+                <input type="submit" value="Submit">
+                <input type="reset"> 
+            </form>
+        </article>
+
+        <footer>
+            Copyright &copy; 2022 Kaitlyn Cummings<br>
+            <a href="mailto:kcummings@lcmail.lcsc.edu">Kcummings@lcmail.lcsc.edu</a>
+        </footer>
+    </body>
+</html>
